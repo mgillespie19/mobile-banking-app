@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6105A5B219F5B6700E70E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A5A219F5B6700E70E68 /* AppDelegate.swift */; };
+		F6105A5D219F5B6700E70E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A5C219F5B6700E70E68 /* ViewController.swift */; };
+		F6105A60219F5B6700E70E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6105A5E219F5B6700E70E68 /* Main.storyboard */; };
+		F6105A63219F5B6700E70E68 /* cardable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6105A61219F5B6700E70E68 /* cardable.xcdatamodeld */; };
+		F6105A65219F5B6800E70E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6105A64219F5B6800E70E68 /* Assets.xcassets */; };
+		F6105A68219F5B6800E70E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6105A66219F5B6800E70E68 /* LaunchScreen.storyboard */; };
+		F6105A73219F5B6800E70E68 /* cardableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A72219F5B6800E70E68 /* cardableTests.swift */; };
+		F6105A7E219F5B6800E70E68 /* cardableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A7D219F5B6800E70E68 /* cardableUITests.swift */; };
+		F6105A8C219F5BC400E70E68 /* labelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A8B219F5BC400E70E68 /* labelExtensions.swift */; };
+		F6105A8E219F5BD900E70E68 /* viewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A8D219F5BD900E70E68 /* viewExtensions.swift */; };
+		F6105A90219F5C2400E70E68 /* creditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A8F219F5C2400E70E68 /* creditView.swift */; };
+		F6105A92219F5C2D00E70E68 /* debitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A91219F5C2D00E70E68 /* debitView.swift */; };
+		F6105A94219F5C3600E70E68 /* landingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A93219F5C3600E70E68 /* landingView.swift */; };
+		F6E7E636219F7EDB000E3880 /* apiQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7E635219F7EDB000E3880 /* apiQuery.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6105A6F219F5B6800E70E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6105A4F219F5B6700E70E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6105A56219F5B6700E70E68;
+			remoteInfo = cardable;
+		};
+		F6105A7A219F5B6800E70E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6105A4F219F5B6700E70E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6105A56219F5B6700E70E68;
+			remoteInfo = cardable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6105A57219F5B6700E70E68 /* cardable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6105A5A219F5B6700E70E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6105A5C219F5B6700E70E68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6105A5F219F5B6700E70E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6105A62219F5B6700E70E68 /* cardable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cardable.xcdatamodel; sourceTree = "<group>"; };
+		F6105A64219F5B6800E70E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6105A67219F5B6800E70E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6105A69219F5B6800E70E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6105A6E219F5B6800E70E68 /* cardableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cardableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6105A72219F5B6800E70E68 /* cardableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardableTests.swift; sourceTree = "<group>"; };
+		F6105A74219F5B6800E70E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6105A79219F5B6800E70E68 /* cardableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cardableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6105A7D219F5B6800E70E68 /* cardableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardableUITests.swift; sourceTree = "<group>"; };
+		F6105A7F219F5B6800E70E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6105A8B219F5BC400E70E68 /* labelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelExtensions.swift; sourceTree = "<group>"; };
+		F6105A8D219F5BD900E70E68 /* viewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewExtensions.swift; sourceTree = "<group>"; };
+		F6105A8F219F5C2400E70E68 /* creditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditView.swift; sourceTree = "<group>"; };
+		F6105A91219F5C2D00E70E68 /* debitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debitView.swift; sourceTree = "<group>"; };
+		F6105A93219F5C3600E70E68 /* landingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingView.swift; sourceTree = "<group>"; };
+		F6E7E635219F7EDB000E3880 /* apiQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiQuery.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6105A54219F5B6700E70E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6105A6B219F5B6800E70E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6105A76219F5B6800E70E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6105A4E219F5B6700E70E68 = {
+			isa = PBXGroup;
+			children = (
+				F6105A59219F5B6700E70E68 /* cardable */,
+				F6105A71219F5B6800E70E68 /* cardableTests */,
+				F6105A7C219F5B6800E70E68 /* cardableUITests */,
+				F6105A58219F5B6700E70E68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6105A58219F5B6700E70E68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6105A57219F5B6700E70E68 /* cardable.app */,
+				F6105A6E219F5B6800E70E68 /* cardableTests.xctest */,
+				F6105A79219F5B6800E70E68 /* cardableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6105A59219F5B6700E70E68 /* cardable */ = {
+			isa = PBXGroup;
+			children = (
+				F6105A69219F5B6800E70E68 /* Info.plist */,
+				F626A9A8219F8960007B28F1 /* api calls */,
+				F626A9A6219F7FD7007B28F1 /* scrollView */,
+				F626A9A7219F8001007B28F1 /* extensions */,
+				F626A9A9219F8973007B28F1 /* reg */,
+			);
+			path = cardable;
+			sourceTree = "<group>";
+		};
+		F6105A71219F5B6800E70E68 /* cardableTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6105A72219F5B6800E70E68 /* cardableTests.swift */,
+				F6105A74219F5B6800E70E68 /* Info.plist */,
+			);
+			path = cardableTests;
+			sourceTree = "<group>";
+		};
+		F6105A7C219F5B6800E70E68 /* cardableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6105A7D219F5B6800E70E68 /* cardableUITests.swift */,
+				F6105A7F219F5B6800E70E68 /* Info.plist */,
+			);
+			path = cardableUITests;
+			sourceTree = "<group>";
+		};
+		F626A9A6219F7FD7007B28F1 /* scrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F6105A8F219F5C2400E70E68 /* creditView.swift */,
+				F6105A91219F5C2D00E70E68 /* debitView.swift */,
+				F6105A93219F5C3600E70E68 /* landingView.swift */,
+			);
+			path = scrollView;
+			sourceTree = "<group>";
+		};
+		F626A9A7219F8001007B28F1 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6105A8B219F5BC400E70E68 /* labelExtensions.swift */,
+				F6105A8D219F5BD900E70E68 /* viewExtensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		F626A9A8219F8960007B28F1 /* api calls */ = {
+			isa = PBXGroup;
+			children = (
+				F6E7E635219F7EDB000E3880 /* apiQuery.swift */,
+			);
+			path = "api calls";
+			sourceTree = "<group>";
+		};
+		F626A9A9219F8973007B28F1 /* reg */ = {
+			isa = PBXGroup;
+			children = (
+				F6105A5A219F5B6700E70E68 /* AppDelegate.swift */,
+				F6105A5C219F5B6700E70E68 /* ViewController.swift */,
+				F6105A5E219F5B6700E70E68 /* Main.storyboard */,
+				F6105A64219F5B6800E70E68 /* Assets.xcassets */,
+				F6105A66219F5B6800E70E68 /* LaunchScreen.storyboard */,
+				F6105A61219F5B6700E70E68 /* cardable.xcdatamodeld */,
+			);
+			path = reg;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6105A56219F5B6700E70E68 /* cardable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6105A82219F5B6800E70E68 /* Build configuration list for PBXNativeTarget "cardable" */;
+			buildPhases = (
+				F6105A53219F5B6700E70E68 /* Sources */,
+				F6105A54219F5B6700E70E68 /* Frameworks */,
+				F6105A55219F5B6700E70E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cardable;
+			productName = cardable;
+			productReference = F6105A57219F5B6700E70E68 /* cardable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6105A6D219F5B6800E70E68 /* cardableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6105A85219F5B6800E70E68 /* Build configuration list for PBXNativeTarget "cardableTests" */;
+			buildPhases = (
+				F6105A6A219F5B6800E70E68 /* Sources */,
+				F6105A6B219F5B6800E70E68 /* Frameworks */,
+				F6105A6C219F5B6800E70E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6105A70219F5B6800E70E68 /* PBXTargetDependency */,
+			);
+			name = cardableTests;
+			productName = cardableTests;
+			productReference = F6105A6E219F5B6800E70E68 /* cardableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6105A78219F5B6800E70E68 /* cardableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6105A88219F5B6800E70E68 /* Build configuration list for PBXNativeTarget "cardableUITests" */;
+			buildPhases = (
+				F6105A75219F5B6800E70E68 /* Sources */,
+				F6105A76219F5B6800E70E68 /* Frameworks */,
+				F6105A77219F5B6800E70E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6105A7B219F5B6800E70E68 /* PBXTargetDependency */,
+			);
+			name = cardableUITests;
+			productName = cardableUITests;
+			productReference = F6105A79219F5B6800E70E68 /* cardableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6105A4F219F5B6700E70E68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Max Gillespie";
+				TargetAttributes = {
+					F6105A56219F5B6700E70E68 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F6105A6D219F5B6800E70E68 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F6105A56219F5B6700E70E68;
+					};
+					F6105A78219F5B6800E70E68 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F6105A56219F5B6700E70E68;
+					};
+				};
+			};
+			buildConfigurationList = F6105A52219F5B6700E70E68 /* Build configuration list for PBXProject "cardable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6105A4E219F5B6700E70E68;
+			productRefGroup = F6105A58219F5B6700E70E68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6105A56219F5B6700E70E68 /* cardable */,
+				F6105A6D219F5B6800E70E68 /* cardableTests */,
+				F6105A78219F5B6800E70E68 /* cardableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6105A55219F5B6700E70E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6105A68219F5B6800E70E68 /* LaunchScreen.storyboard in Resources */,
+				F6105A65219F5B6800E70E68 /* Assets.xcassets in Resources */,
+				F6105A60219F5B6700E70E68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6105A6C219F5B6800E70E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6105A77219F5B6800E70E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6105A53219F5B6700E70E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6105A8C219F5BC400E70E68 /* labelExtensions.swift in Sources */,
+				F6105A92219F5C2D00E70E68 /* debitView.swift in Sources */,
+				F6105A5D219F5B6700E70E68 /* ViewController.swift in Sources */,
+				F6105A63219F5B6700E70E68 /* cardable.xcdatamodeld in Sources */,
+				F6105A94219F5C3600E70E68 /* landingView.swift in Sources */,
+				F6105A8E219F5BD900E70E68 /* viewExtensions.swift in Sources */,
+				F6105A5B219F5B6700E70E68 /* AppDelegate.swift in Sources */,
+				F6105A90219F5C2400E70E68 /* creditView.swift in Sources */,
+				F6E7E636219F7EDB000E3880 /* apiQuery.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6105A6A219F5B6800E70E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6105A73219F5B6800E70E68 /* cardableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6105A75219F5B6800E70E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6105A7E219F5B6800E70E68 /* cardableUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6105A70219F5B6800E70E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6105A56219F5B6700E70E68 /* cardable */;
+			targetProxy = F6105A6F219F5B6800E70E68 /* PBXContainerItemProxy */;
+		};
+		F6105A7B219F5B6800E70E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6105A56219F5B6700E70E68 /* cardable */;
+			targetProxy = F6105A7A219F5B6800E70E68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6105A5E219F5B6700E70E68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6105A5F219F5B6700E70E68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6105A66219F5B6800E70E68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6105A67219F5B6800E70E68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6105A80219F5B6800E70E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6105A81219F5B6800E70E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6105A83219F5B6800E70E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = cardable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.cardable";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6105A84219F5B6800E70E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = cardable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.cardable";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F6105A86219F5B6800E70E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = cardableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.cardableTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cardable.app/cardable";
+			};
+			name = Debug;
+		};
+		F6105A87219F5B6800E70E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = cardableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.cardableTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cardable.app/cardable";
+			};
+			name = Release;
+		};
+		F6105A89219F5B6800E70E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = cardableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.cardableUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cardable;
+			};
+			name = Debug;
+		};
+		F6105A8A219F5B6800E70E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7TC672PPY;
+				INFOPLIST_FILE = cardableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Max-Gillespie.cardableUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cardable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6105A52219F5B6700E70E68 /* Build configuration list for PBXProject "cardable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6105A80219F5B6800E70E68 /* Debug */,
+				F6105A81219F5B6800E70E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6105A82219F5B6800E70E68 /* Build configuration list for PBXNativeTarget "cardable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6105A83219F5B6800E70E68 /* Debug */,
+				F6105A84219F5B6800E70E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6105A85219F5B6800E70E68 /* Build configuration list for PBXNativeTarget "cardableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6105A86219F5B6800E70E68 /* Debug */,
+				F6105A87219F5B6800E70E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6105A88219F5B6800E70E68 /* Build configuration list for PBXNativeTarget "cardableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6105A89219F5B6800E70E68 /* Debug */,
+				F6105A8A219F5B6800E70E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6105A61219F5B6700E70E68 /* cardable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6105A62219F5B6700E70E68 /* cardable.xcdatamodel */,
+			);
+			currentVersion = F6105A62219F5B6700E70E68 /* cardable.xcdatamodel */;
+			path = cardable.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F6105A4F219F5B6700E70E68 /* Project object */;
+}
