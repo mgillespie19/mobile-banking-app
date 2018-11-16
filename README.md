@@ -1,9 +1,8 @@
-# CARDABLE???
-
+# README
 
 # --- action items ---
 we need a name at some point
-  app icon
+app icon
 perfect wireframes (this is a pretty vague deliverable haha)
 
 # --- feature wish list ---
