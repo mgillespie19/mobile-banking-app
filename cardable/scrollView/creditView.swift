@@ -10,10 +10,12 @@ import UIKit
 
 class creditView: UIViewController {
 
+    @IBOutlet weak var mainCard: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
