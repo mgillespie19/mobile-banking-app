@@ -18,12 +18,14 @@ class loginView: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        createGradientLayer(v: self.loginBgd, top: UIColor.white.cgColor, bottom: UIColor.black.cgColor)
+        let midColor = createGradientBlockLayer(v: self.loginBgd, top: UIColor.gray.cgColor, bottom: UIColor.black.cgColor)
         
         self.loginBtn.bringSubviewToFront(self.view)
         
         username.delegate = self
         password.delegate = self
+        
+        setupTextFields(midColor: midColor)
     }
 
     @IBAction func userLogin(_ sender: Any) {
@@ -35,5 +37,9 @@ class loginView: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
+    }
+    
+    func setupTextFields(midColor:UIColor) {
+        
     }
 }

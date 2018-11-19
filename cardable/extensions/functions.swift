@@ -13,6 +13,15 @@ func createGradientLayer(v: UIView, top: CGColor, bottom: CGColor) {
     let gradientLayer = CAGradientLayer()
     gradientLayer.frame = v.bounds
     gradientLayer.colors = [top, bottom]
-    //v.layer.addSublayer(gradientLayer)
+
     v.layer.insertSublayer(gradientLayer, at: 0)
+}
+
+func createGradientBlockLayer(v: UIView, top:CGColor, bottom:CGColor) ->UIColor{
+    let view = Divider(frame: v.bounds)
+    let midColor = view.fill(top:top, bottom:bottom)
+
+    v.insertSubview(view, at: 0)
+    
+    return midColor
 }
