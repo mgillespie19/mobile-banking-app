@@ -9,11 +9,13 @@
 import Foundation
 import UIKit
 
-func createGradientLayer(v: UIView, top: CGColor, bottom: CGColor) {
+func createGradientLayer(v: UIView, colors:[CGColor], rotation:[CGPoint]) {
     let gradientLayer = CAGradientLayer()
     gradientLayer.frame = v.bounds
-    gradientLayer.colors = [top, bottom]
-
+    gradientLayer.colors = colors
+    gradientLayer.startPoint = rotation[0]
+    gradientLayer.endPoint = rotation[1]
+    
     v.layer.insertSublayer(gradientLayer, at: 0)
 }
 
