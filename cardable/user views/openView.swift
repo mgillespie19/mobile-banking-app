@@ -19,9 +19,14 @@ class openView: UIViewController {
         welcome.font = welcome.font.withSize(45)
         welcome.lineBreakMode = .byWordWrapping
         welcome.numberOfLines = 2
-        
+        welcome.alpha = 0
         
         self.view.addSubview(welcome)
+        
+        welcome.fadeIn(duration: 2, completion: {
+            (finished: Bool) -> Void in
+            
+        })
     }
     
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E5FFFF0EACE13B9DF6C141B /* Pods_cardable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E663AC28F58314B1BBA0DA9 /* Pods_cardable.framework */; };
 		F6105A5B219F5B6700E70E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A5A219F5B6700E70E68 /* AppDelegate.swift */; };
 		F6105A5D219F5B6700E70E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A5C219F5B6700E70E68 /* ViewController.swift */; };
 		F6105A60219F5B6700E70E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6105A5E219F5B6700E70E68 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		F626A9AB219F904E007B28F1 /* bankQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626A9AA219F904E007B28F1 /* bankQuery.swift */; };
 		F63A723721A0F74F00AD7B20 /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A723621A0F74F00AD7B20 /* functions.swift */; };
 		F65751D521A510B20050801B /* openView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65751D421A510B20050801B /* openView.swift */; };
+		F65751D721A514240050801B /* signUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65751D621A514240050801B /* signUpView.swift */; };
 		F696DA1821A209A500051311 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696DA1721A209A500051311 /* loginView.swift */; };
 		F6E7E636219F7EDB000E3880 /* apiQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7E635219F7EDB000E3880 /* apiQuery.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07477B24F4986FC3AFE4828B /* Pods-cardable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cardable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cardable/Pods-cardable.debug.xcconfig"; sourceTree = "<group>"; };
+		1E663AC28F58314B1BBA0DA9 /* Pods_cardable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cardable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E1CE28A2BB537D0EE9B379 /* Pods-cardable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cardable.release.xcconfig"; path = "Pods/Target Support Files/Pods-cardable/Pods-cardable.release.xcconfig"; sourceTree = "<group>"; };
 		F6105A57219F5B6700E70E68 /* cardable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6105A5A219F5B6700E70E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6105A5C219F5B6700E70E68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 		F626A9AA219F904E007B28F1 /* bankQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankQuery.swift; sourceTree = "<group>"; };
 		F63A723621A0F74F00AD7B20 /* functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
 		F65751D421A510B20050801B /* openView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openView.swift; sourceTree = "<group>"; };
+		F65751D621A514240050801B /* signUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpView.swift; sourceTree = "<group>"; };
 		F696DA1721A209A500051311 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		F6E7E635219F7EDB000E3880 /* apiQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5FFFF0EACE13B9DF6C141B /* Pods_cardable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52F8E2A1C409FB2E8BF54247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E663AC28F58314B1BBA0DA9 /* Pods_cardable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA8E3DB620F04033D26EDF18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07477B24F4986FC3AFE4828B /* Pods-cardable.debug.xcconfig */,
+				27E1CE28A2BB537D0EE9B379 /* Pods-cardable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F6105A4E219F5B6700E70E68 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +127,8 @@
 				F6105A71219F5B6800E70E68 /* cardableTests */,
 				F6105A7C219F5B6800E70E68 /* cardableUITests */,
 				F6105A58219F5B6700E70E68 /* Products */,
+				DA8E3DB620F04033D26EDF18 /* Pods */,
+				52F8E2A1C409FB2E8BF54247 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,8 +218,9 @@
 		F696DA1621A2099000051311 /* user views */ = {
 			isa = PBXGroup;
 			children = (
-				F696DA1721A209A500051311 /* loginView.swift */,
 				F65751D421A510B20050801B /* openView.swift */,
+				F696DA1721A209A500051311 /* loginView.swift */,
+				F65751D621A514240050801B /* signUpView.swift */,
 			);
 			path = "user views";
 			sourceTree = "<group>";
@@ -205,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6105A82219F5B6800E70E68 /* Build configuration list for PBXNativeTarget "cardable" */;
 			buildPhases = (
+				9F5B25EA6774699F41A656EF /* [CP] Check Pods Manifest.lock */,
 				F6105A53219F5B6700E70E68 /* Sources */,
 				F6105A54219F5B6700E70E68 /* Frameworks */,
 				F6105A55219F5B6700E70E68 /* Resources */,
+				4B088B15EA14BCC71F79368F /* [CP] Embed Pods Frameworks */,
+				78E7CB7B183A538A5A151390 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,11 +354,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B088B15EA14BCC71F79368F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cardable/Pods-cardable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cardable/Pods-cardable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78E7CB7B183A538A5A151390 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cardable/Pods-cardable-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cardable/Pods-cardable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F5B25EA6774699F41A656EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cardable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6105A53219F5B6700E70E68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65751D721A514240050801B /* signUpView.swift in Sources */,
 				F6105A8C219F5BC400E70E68 /* labelExtensions.swift in Sources */,
 				F6105A92219F5C2D00E70E68 /* debitView.swift in Sources */,
 				F6105A5D219F5B6700E70E68 /* ViewController.swift in Sources */,
@@ -514,6 +632,7 @@
 		};
 		F6105A83219F5B6800E70E68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07477B24F4986FC3AFE4828B /* Pods-cardable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -533,6 +652,7 @@
 		};
 		F6105A84219F5B6800E70E68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27E1CE28A2BB537D0EE9B379 /* Pods-cardable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
