@@ -51,7 +51,7 @@
                             </label>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9g3-Bl-iZD">
                                 <rect key="frame" x="37.666666666666657" y="433" width="300" height="60"/>
-                                <color key="backgroundColor" red="0.67849679129999996" green="0.62092118070000002" blue="0.94154505070000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.11766552972693822" green="0.32271165828187415" blue="0.6209747779248731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Zsv-0D-dhE"/>
                                     <constraint firstAttribute="width" constant="300" id="zYL-Ia-RgB"/>
@@ -71,7 +71,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.67849679129999996" green="0.62092118070000002" blue="0.94154505070000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Rn0-cv-YWb" firstAttribute="centerX" secondItem="gUw-u9-De9" secondAttribute="centerX" id="88f-wF-yWh"/>
                             <constraint firstItem="s8z-6Y-f9z" firstAttribute="top" secondItem="Rn0-cv-YWb" secondAttribute="bottom" constant="15" id="DKl-gz-GfI"/>
