@@ -18,7 +18,7 @@ class loginView: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        createGradientLayer(v: self.view, colors: [UIColor(displayP3Red: 0.1, green: 0.4, blue: 0.8, alpha: 1).cgColor, UIColor.black.cgColor], rotation: [CGPoint(x: 0.5, y: 0.0), CGPoint(x: 0.2, y: 0.6)])
+        createGradientLayer(v: self.view, colors: [UIColor(displayP3Red: 0.3, green: 0.7, blue: 0.95, alpha: 1).cgColor, UIColor.black.cgColor], rotation: [CGPoint(x: 0.5, y: 0.2), CGPoint(x: 0.1, y: 0.6)], locations: [0, 1])
         
         
         self.loginBtn.bringSubviewToFront(self.view)

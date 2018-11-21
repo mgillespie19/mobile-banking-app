@@ -22,6 +22,7 @@
 		F6105A94219F5C3600E70E68 /* landingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A93219F5C3600E70E68 /* landingView.swift */; };
 		F626A9AB219F904E007B28F1 /* bankQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626A9AA219F904E007B28F1 /* bankQuery.swift */; };
 		F63A723721A0F74F00AD7B20 /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A723621A0F74F00AD7B20 /* functions.swift */; };
+		F65751D521A510B20050801B /* openView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65751D421A510B20050801B /* openView.swift */; };
 		F696DA1821A209A500051311 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696DA1721A209A500051311 /* loginView.swift */; };
 		F6E7E636219F7EDB000E3880 /* apiQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7E635219F7EDB000E3880 /* apiQuery.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		F6105A93219F5C3600E70E68 /* landingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingView.swift; sourceTree = "<group>"; };
 		F626A9AA219F904E007B28F1 /* bankQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bankQuery.swift; sourceTree = "<group>"; };
 		F63A723621A0F74F00AD7B20 /* functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		F65751D421A510B20050801B /* openView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openView.swift; sourceTree = "<group>"; };
 		F696DA1721A209A500051311 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		F6E7E635219F7EDB000E3880 /* apiQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				F6105A69219F5B6800E70E68 /* Info.plist */,
-				F696DA1621A2099000051311 /* login */,
+				F696DA1621A2099000051311 /* user views */,
 				F626A9A8219F8960007B28F1 /* api calls */,
 				F626A9A6219F7FD7007B28F1 /* scrollView */,
 				F626A9A7219F8001007B28F1 /* UIKit extensions */,
@@ -187,12 +189,13 @@
 			path = reg;
 			sourceTree = "<group>";
 		};
-		F696DA1621A2099000051311 /* login */ = {
+		F696DA1621A2099000051311 /* user views */ = {
 			isa = PBXGroup;
 			children = (
 				F696DA1721A209A500051311 /* loginView.swift */,
+				F65751D421A510B20050801B /* openView.swift */,
 			);
-			path = login;
+			path = "user views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +333,7 @@
 				F6105A92219F5C2D00E70E68 /* debitView.swift in Sources */,
 				F6105A5D219F5B6700E70E68 /* ViewController.swift in Sources */,
 				F6105A63219F5B6700E70E68 /* cardable.xcdatamodeld in Sources */,
+				F65751D521A510B20050801B /* openView.swift in Sources */,
 				F6105A94219F5C3600E70E68 /* landingView.swift in Sources */,
 				F6105A8E219F5BD900E70E68 /* viewExtensions.swift in Sources */,
 				F626A9AB219F904E007B28F1 /* bankQuery.swift in Sources */,
