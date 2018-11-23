@@ -26,6 +26,10 @@
 		F65751D521A510B20050801B /* openView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65751D421A510B20050801B /* openView.swift */; };
 		F65751D721A514240050801B /* signUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65751D621A514240050801B /* signUpView.swift */; };
 		F696DA1821A209A500051311 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696DA1721A209A500051311 /* loginView.swift */; };
+		F6BF1DB921A88F4E00FE6059 /* facebookUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF1DB821A88F4E00FE6059 /* facebookUser.swift */; };
+		F6BF1DBB21A88F6400FE6059 /* facebookPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF1DBA21A88F6400FE6059 /* facebookPost.swift */; };
+		F6BF1DBE21A88FA600FE6059 /* networkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF1DBD21A88FA600FE6059 /* networkingManager.swift */; };
+		F6BF1DC021A88FD200FE6059 /* facebookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF1DBF21A88FD200FE6059 /* facebookAPI.swift */; };
 		F6E7E636219F7EDB000E3880 /* apiQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7E635219F7EDB000E3880 /* apiQuery.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +78,10 @@
 		F65751D421A510B20050801B /* openView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openView.swift; sourceTree = "<group>"; };
 		F65751D621A514240050801B /* signUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpView.swift; sourceTree = "<group>"; };
 		F696DA1721A209A500051311 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		F6BF1DB821A88F4E00FE6059 /* facebookUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookUser.swift; sourceTree = "<group>"; };
+		F6BF1DBA21A88F6400FE6059 /* facebookPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookPost.swift; sourceTree = "<group>"; };
+		F6BF1DBD21A88FA600FE6059 /* networkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkingManager.swift; sourceTree = "<group>"; };
+		F6BF1DBF21A88FD200FE6059 /* facebookAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookAPI.swift; sourceTree = "<group>"; };
 		F6E7E635219F7EDB000E3880 /* apiQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,9 +154,11 @@
 			isa = PBXGroup;
 			children = (
 				F6105A69219F5B6800E70E68 /* Info.plist */,
+				F6105A64219F5B6800E70E68 /* Assets.xcassets */,
+				F6105A5E219F5B6700E70E68 /* Main.storyboard */,
+				F6BF1DBC21A88F9200FE6059 /* controllers */,
 				F696DA1621A2099000051311 /* user views */,
-				F626A9A8219F8960007B28F1 /* api calls */,
-				F626A9A6219F7FD7007B28F1 /* scrollView */,
+				F626A9A8219F8960007B28F1 /* models */,
 				F626A9A7219F8001007B28F1 /* UIKit extensions */,
 				F626A9A9219F8973007B28F1 /* reg */,
 			);
@@ -193,13 +203,13 @@
 			path = "UIKit extensions";
 			sourceTree = "<group>";
 		};
-		F626A9A8219F8960007B28F1 /* api calls */ = {
+		F626A9A8219F8960007B28F1 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				F6E7E635219F7EDB000E3880 /* apiQuery.swift */,
-				F626A9AA219F904E007B28F1 /* bankQuery.swift */,
+				F6BF1DB821A88F4E00FE6059 /* facebookUser.swift */,
+				F6BF1DBA21A88F6400FE6059 /* facebookPost.swift */,
 			);
-			path = "api calls";
+			path = models;
 			sourceTree = "<group>";
 		};
 		F626A9A9219F8973007B28F1 /* reg */ = {
@@ -207,8 +217,6 @@
 			children = (
 				F6105A5A219F5B6700E70E68 /* AppDelegate.swift */,
 				F6105A5C219F5B6700E70E68 /* ViewController.swift */,
-				F6105A5E219F5B6700E70E68 /* Main.storyboard */,
-				F6105A64219F5B6800E70E68 /* Assets.xcassets */,
 				F6105A66219F5B6800E70E68 /* LaunchScreen.storyboard */,
 				F6105A61219F5B6700E70E68 /* cardable.xcdatamodeld */,
 			);
@@ -221,8 +229,20 @@
 				F65751D421A510B20050801B /* openView.swift */,
 				F696DA1721A209A500051311 /* loginView.swift */,
 				F65751D621A514240050801B /* signUpView.swift */,
+				F626A9A6219F7FD7007B28F1 /* scrollView */,
 			);
 			path = "user views";
+			sourceTree = "<group>";
+		};
+		F6BF1DBC21A88F9200FE6059 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6E7E635219F7EDB000E3880 /* apiQuery.swift */,
+				F626A9AA219F904E007B28F1 /* bankQuery.swift */,
+				F6BF1DBD21A88FA600FE6059 /* networkingManager.swift */,
+				F6BF1DBF21A88FD200FE6059 /* facebookAPI.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +468,7 @@
 			files = (
 				F65751D721A514240050801B /* signUpView.swift in Sources */,
 				F6105A8C219F5BC400E70E68 /* labelExtensions.swift in Sources */,
+				F6BF1DC021A88FD200FE6059 /* facebookAPI.swift in Sources */,
 				F6105A92219F5C2D00E70E68 /* debitView.swift in Sources */,
 				F6105A5D219F5B6700E70E68 /* ViewController.swift in Sources */,
 				F6105A63219F5B6700E70E68 /* cardable.xcdatamodeld in Sources */,
@@ -456,8 +477,11 @@
 				F6105A8E219F5BD900E70E68 /* viewExtensions.swift in Sources */,
 				F626A9AB219F904E007B28F1 /* bankQuery.swift in Sources */,
 				F63A723721A0F74F00AD7B20 /* functions.swift in Sources */,
+				F6BF1DBE21A88FA600FE6059 /* networkingManager.swift in Sources */,
+				F6BF1DB921A88F4E00FE6059 /* facebookUser.swift in Sources */,
 				F6105A5B219F5B6700E70E68 /* AppDelegate.swift in Sources */,
 				F6105A90219F5C2400E70E68 /* creditView.swift in Sources */,
+				F6BF1DBB21A88F6400FE6059 /* facebookPost.swift in Sources */,
 				F696DA1821A209A500051311 /* loginView.swift in Sources */,
 				F6E7E636219F7EDB000E3880 /* apiQuery.swift in Sources */,
 			);
