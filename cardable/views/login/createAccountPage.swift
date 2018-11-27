@@ -82,14 +82,14 @@ class CreateAccountPageCell: UICollectionViewCell {
         button.setTitle("Create Account", for: .normal)
         button.layer.cornerRadius = 20
         button.layer.masksToBounds = true
-        button.backgroundColor = UIColor.gray
+        button.backgroundColor = Preferences.moneyGreen
         return button
     }()
     
     let alreadyHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Already Have An Account?", for: .normal)
-        button.setTitleColor(UIColor.lightGray, for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
         return button
     }()
     
@@ -109,7 +109,7 @@ class CreateAccountPageCell: UICollectionViewCell {
             
             //constraints for the title
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0),
-            titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0),
+            titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: self.frame.height/4),
             titleLabel.heightAnchor.constraint(equalToConstant: 40),
             titleLabel.widthAnchor.constraint(equalToConstant: 300),
             
@@ -139,7 +139,7 @@ class CreateAccountPageCell: UICollectionViewCell {
             
             //constraints for the already have account button
             alreadyHaveAccountButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0),
-            alreadyHaveAccountButton.topAnchor.constraint(equalTo: createAccountButton.bottomAnchor, constant: verticalPadding/2),
+            alreadyHaveAccountButton.topAnchor.constraint(equalTo: createAccountButton.bottomAnchor, constant: verticalPadding),
             alreadyHaveAccountButton.heightAnchor.constraint(equalToConstant: 40),
             alreadyHaveAccountButton.widthAnchor.constraint(equalToConstant: 300),
             
