@@ -150,7 +150,7 @@ class StartController: UIViewController, UICollectionViewDelegateFlowLayout, UIC
     
     func login(){
         //let mainTabBarController = MainTabBarController()
-        //print("Logging in")
+        print("Logging in")
         //present(mainTabBarController, animated: true, completion: nil)
     }
     
