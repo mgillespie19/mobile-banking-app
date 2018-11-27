@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  creditView.swift
 //  cardable
 //
 //  Created by Max Gillespie on 11/16/18.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class creditView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
+        
     }
+    
 
 }
-

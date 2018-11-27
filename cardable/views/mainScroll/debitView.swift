@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  debitView.swift
 //  cardable
 //
 //  Created by Max Gillespie on 11/16/18.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class debitView: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
+        // Do any additional setup after loading the view.
     }
 
-}
 
+}
