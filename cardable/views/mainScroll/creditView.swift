@@ -12,9 +12,9 @@ class creditView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+   
     }
+    
     
 
 }
