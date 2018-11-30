@@ -28,7 +28,7 @@
 		F686639A21ACDEC000A8198F /* preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686639921ACDEC000A8198F /* preferences.swift */; };
 		F686639C21ACDF8000A8198F /* loginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686639B21ACDF8000A8198F /* loginPage.swift */; };
 		F686639E21ACDFA700A8198F /* createAccountPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686639D21ACDFA700A8198F /* createAccountPage.swift */; };
-		F68663A021ACF6C600A8198F /* mainScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686639F21ACF6C600A8198F /* mainScrollView.swift */; };
+		F68663A021ACF6C600A8198F /* mainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F686639F21ACF6C600A8198F /* mainPageView.swift */; };
 		F6BF1DB921A88F4E00FE6059 /* facebookUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF1DB821A88F4E00FE6059 /* facebookUser.swift */; };
 		F6BF1DBB21A88F6400FE6059 /* facebookPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF1DBA21A88F6400FE6059 /* facebookPost.swift */; };
 		F6BF1DBE21A88FA600FE6059 /* networkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF1DBD21A88FA600FE6059 /* networkingManager.swift */; };
@@ -83,7 +83,7 @@
 		F686639921ACDEC000A8198F /* preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preferences.swift; sourceTree = "<group>"; };
 		F686639B21ACDF8000A8198F /* loginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPage.swift; sourceTree = "<group>"; };
 		F686639D21ACDFA700A8198F /* createAccountPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountPage.swift; sourceTree = "<group>"; };
-		F686639F21ACF6C600A8198F /* mainScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScrollView.swift; sourceTree = "<group>"; };
+		F686639F21ACF6C600A8198F /* mainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPageView.swift; sourceTree = "<group>"; };
 		F6BF1DB821A88F4E00FE6059 /* facebookUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookUser.swift; sourceTree = "<group>"; };
 		F6BF1DBA21A88F6400FE6059 /* facebookPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookPost.swift; sourceTree = "<group>"; };
 		F6BF1DBD21A88FA600FE6059 /* networkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkingManager.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		F626A9A6219F7FD7007B28F1 /* mainScroll */ = {
 			isa = PBXGroup;
 			children = (
-				F686639F21ACF6C600A8198F /* mainScrollView.swift */,
+				F686639F21ACF6C600A8198F /* mainPageView.swift */,
 				F6105A8F219F5C2400E70E68 /* creditView.swift */,
 				F6105A91219F5C2D00E70E68 /* debitView.swift */,
 				F6105A93219F5C3600E70E68 /* landingView.swift */,
@@ -494,7 +494,7 @@
 				F6105A63219F5B6700E70E68 /* cardable.xcdatamodeld in Sources */,
 				F6105A94219F5C3600E70E68 /* landingView.swift in Sources */,
 				F6105A8E219F5BD900E70E68 /* viewExtensions.swift in Sources */,
-				F68663A021ACF6C600A8198F /* mainScrollView.swift in Sources */,
+				F68663A021ACF6C600A8198F /* mainPageView.swift in Sources */,
 				F626A9AB219F904E007B28F1 /* bankQuery.swift in Sources */,
 				F686639C21ACDF8000A8198F /* loginPage.swift in Sources */,
 				F63A723721A0F74F00AD7B20 /* functions.swift in Sources */,

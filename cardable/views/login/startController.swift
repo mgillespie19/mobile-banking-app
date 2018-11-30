@@ -149,9 +149,15 @@ class StartController: UIViewController, UICollectionViewDelegateFlowLayout, UIC
     }
     
     func login(){
-        let mainScrollView = storyboard?.instantiateViewController(withIdentifier: "landing")
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let mainScrollView = storyBoard.instantiateViewController(withIdentifier: "mainSV") as! PageViewController
+        self.present(mainScrollView, animated:true, completion:nil)
+        
+        
         print("Logging in")
-        present(mainScrollView!, animated: true, completion: nil)
+        //present(mainScrollView!, animated: true, completion: nil)
     }
     
     //function to dismiss the keyboard
