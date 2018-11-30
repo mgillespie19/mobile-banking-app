@@ -149,9 +149,9 @@ class StartController: UIViewController, UICollectionViewDelegateFlowLayout, UIC
     }
     
     func login(){
-        //let mainTabBarController = MainTabBarController()
+        let mainScrollView = storyboard?.instantiateViewController(withIdentifier: "landing")
         print("Logging in")
-        //present(mainTabBarController, animated: true, completion: nil)
+        present(mainScrollView!, animated: true, completion: nil)
     }
     
     //function to dismiss the keyboard
