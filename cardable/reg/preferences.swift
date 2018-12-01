@@ -16,6 +16,6 @@ struct Preferences {
     static let gray: UIColor = UIColor(red: 172/255, green: 180/255, blue: 180/255, alpha: 1.0);
     static let complimentary: UIColor = UIColor(red: 90/255, green: 180/255, blue: 180/255, alpha: 1.0);
     static let moneyGreen: UIColor = UIColor(red: 27/255, green: 183/255, blue: 134/255, alpha: 1.0);
-    static let gradientPref = [CGPoint(x: 1, y: 1), CGPoint(x: 0, y: 0)];
+    static let gradientPref = [CGPoint(x: 0, y: 1), CGPoint(x: 1, y: 0)];
 
 }
