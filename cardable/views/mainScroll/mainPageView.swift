@@ -12,6 +12,7 @@ import UIKit
 
 class PageViewController: UIPageViewController
 {
+    
     fileprivate lazy var pages: [UIViewController] = {
         return [
             self.getViewController(withIdentifier: "landing"),
@@ -27,32 +28,30 @@ class PageViewController: UIPageViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.primaryColor.cgColor], rotation: Preferences.gradientPref, locations: [0, 1])
+        
+        setupPageView()
+    }
+    
+    func setupPageView () {
         self.dataSource = self
         self.delegate   = self
-        
-        
+
         if let firstVC = pages.first
         {
             setViewControllers([firstVC], direction: .reverse, animated: true, completion: nil)
         }
     }
-    
-    func setupPageView () {
-        pages.append(creditView())
-        pages.append(debitView())
-        pages.append(landingView())
-    }
+
 }
 
+// PAGE VIEW DATA SOURCE
 extension PageViewController: UIPageViewControllerDataSource
 {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        
         guard let viewControllerIndex = pages.index(of: viewController) else { return nil }
-        
-        print(viewControllerIndex)
-        
         let previousIndex = viewControllerIndex - 1
         
         guard previousIndex >= 0
@@ -88,4 +87,8 @@ extension PageViewController: UIPageViewControllerDataSource
     }
 }
 
-extension PageViewController: UIPageViewControllerDelegate { }
+// PAGE VIEW DELEGATE
+extension PageViewController: UIPageViewControllerDelegate {
+    
+    
+}

@@ -12,7 +12,8 @@ class creditView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+        
+         createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.primaryColor.cgColor], rotation: Preferences.gradientPref, locations: [0, 1])
     }
     
     
