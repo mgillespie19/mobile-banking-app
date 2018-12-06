@@ -13,11 +13,23 @@ import UIKit
 class PageViewController: UIPageViewController
 {
     
+    init(transitionStyle style: UIPageViewController.TransitionStyle, navigationOrientation: UIPageViewController.NavigationOrientation, options: [String : Any]? = nil) {
+        super.init(transitionStyle: style, navigationOrientation: navigationOrientation, options: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    let landing = landingView()
+    let debit = debitView()
+    let credit = creditView()
+    
     fileprivate lazy var pages: [UIViewController] = {
         return [
-            creditView(),
-            debitView(),
-            landingView()
+            landing,
+            credit,
+            debit
         ]
     }()
     
@@ -31,14 +43,13 @@ class PageViewController: UIPageViewController
     func setupPageView () {
         self.dataSource = self
         self.delegate   = self
-
+        
         if let firstVC = pages.first
         {
             setViewControllers([firstVC], direction: .reverse, animated: true, completion: nil)
         }
         
         createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.moneyGreen.cgColor], rotation: Preferences.gradientPref, locations: [0.32, 1.3])
-
     }
 
 }

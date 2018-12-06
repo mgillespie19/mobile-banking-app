@@ -150,7 +150,7 @@ class StartController: UIViewController, UICollectionViewDelegateFlowLayout, UIC
     
     func login(){
                 
-        let mainScrollView = PageViewController()
+        let mainScrollView = PageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
         self.present(mainScrollView, animated:true, completion:nil)
         
         

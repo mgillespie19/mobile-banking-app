@@ -21,11 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let loggedIn = false
+        let loggedIn = true
         var mainViewController: UIViewController
         
         if(loggedIn){
-            let mainScrollView = PageViewController()
+            let mainScrollView = PageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
             mainViewController = mainScrollView
         } else {
             mainViewController = StartController()
