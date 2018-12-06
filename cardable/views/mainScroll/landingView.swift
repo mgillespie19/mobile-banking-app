@@ -21,8 +21,8 @@ class landingView: UIViewController {
     }
     
     func setupLandingView() {
-        self.view.addSubview(titleLabel)
-
+        //self.view.addSubview(titleLabel)
+        self.view.addSubview(creditCard)
     }
     
     func setupAutoLayout() {
@@ -37,5 +37,16 @@ class landingView: UIViewController {
         label.font = label.font.withSize(30)
         label.textAlignment = .left
         return label
+    }()
+    
+    lazy var creditCard:UIImageView = {
+        let img = UIImage(named: "landingCard")
+        let w = self.view.frame.width * 0.85
+        let creditCard = UIImageView(frame: CGRect(x: self.view.frame.width * 0.075, y: self.view.frame.height * 0.4, width: w, height: w * 0.66 ))
+        
+        creditCard.transform = CGAffineTransform(rotationAngle: -1 * .pi / 20)
+        creditCard.image = img
+        
+        return creditCard
     }()
 }
