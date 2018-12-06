@@ -16,21 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let loggedIn = false
+        let loggedIn = true
         var mainViewController: UIViewController
         
-//        if(loggedIn){
-//            mainViewController = MainTabBarController()
-//        } else {
-//            mainViewController = StartController()
-//        }
-        mainViewController = StartController()
+        
+        
+        if(loggedIn){
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let mainScrollView = storyBoard.instantiateViewController(withIdentifier: "mainSV") as! PageViewController
+            mainViewController = mainScrollView
+        } else {
+            mainViewController = StartController()
+        }
+        
         window?.rootViewController = mainViewController
         window?.tintColor = UIColor.white
+       
         
         return true
     }

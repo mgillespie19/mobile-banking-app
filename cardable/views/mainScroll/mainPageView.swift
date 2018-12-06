@@ -29,7 +29,7 @@ class PageViewController: UIPageViewController
     {
         super.viewDidLoad()
         
-        createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.primaryColor.cgColor], rotation: Preferences.gradientPref, locations: [0, 1])
+        createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.moneyGreen.cgColor], rotation: Preferences.gradientPref, locations: [0.32, 1.3])
         
         setupPageView()
     }
