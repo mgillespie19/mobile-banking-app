@@ -6,13 +6,5 @@ target 'cardable' do
   use_frameworks!
 
   # Pods for cardable
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
-  pod 'FacebookShare'
-
-  pod 'AFNetworking'
-
-  pod 'TwitterKit'
-  pod 'TwitterCore'
 
 end

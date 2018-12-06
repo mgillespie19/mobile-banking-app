@@ -149,10 +149,8 @@ class StartController: UIViewController, UICollectionViewDelegateFlowLayout, UIC
     }
     
     func login(){
-        
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-        let mainScrollView = storyBoard.instantiateViewController(withIdentifier: "mainSV") as! PageViewController
+                
+        let mainScrollView = PageViewController()
         self.present(mainScrollView, animated:true, completion:nil)
         
         

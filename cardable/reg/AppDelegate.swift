@@ -21,14 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let loggedIn = true
+        let loggedIn = false
         var mainViewController: UIViewController
         
-        
-        
         if(loggedIn){
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let mainScrollView = storyBoard.instantiateViewController(withIdentifier: "mainSV") as! PageViewController
+            let mainScrollView = PageViewController()
             mainViewController = mainScrollView
         } else {
             mainViewController = StartController()

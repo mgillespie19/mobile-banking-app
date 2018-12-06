@@ -15,22 +15,16 @@ class PageViewController: UIPageViewController
     
     fileprivate lazy var pages: [UIViewController] = {
         return [
-            self.getViewController(withIdentifier: "landing"),
-            self.getViewController(withIdentifier: "debit"),
-            self.getViewController(withIdentifier: "credit")
+            creditView(),
+            debitView(),
+            landingView()
         ]
     }()
-    
-    fileprivate func getViewController(withIdentifier identifier: String) -> UIViewController {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
-    }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.moneyGreen.cgColor], rotation: Preferences.gradientPref, locations: [0.32, 1.3])
-        
+                
         setupPageView()
     }
     
@@ -42,6 +36,9 @@ class PageViewController: UIPageViewController
         {
             setViewControllers([firstVC], direction: .reverse, animated: true, completion: nil)
         }
+        
+        createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.moneyGreen.cgColor], rotation: Preferences.gradientPref, locations: [0.32, 1.3])
+
     }
 
 }
