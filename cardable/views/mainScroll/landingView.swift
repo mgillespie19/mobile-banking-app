@@ -54,6 +54,23 @@ class landingView: UIViewController, UIScrollViewDelegate {
         
     }
     
+    
+    // ----------------------- LABELS -----------------------
+    lazy var moneyLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.text = "1,321.74"
+        label.textColor = UIColor.white
+        label.font = UIFont(name: "Helvetica Bold", size: 55)
+        label.textAlignment = .left
+        return label
+    }()
+    
+    
+    // ----------------------- BUTTONS -----------------------
+    
+    
+    
+    // ----------------------- VIEWS -----------------------
     lazy var scrollView: UIScrollView = {
         let scroll = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         
@@ -64,15 +81,6 @@ class landingView: UIViewController, UIScrollViewDelegate {
         scroll.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 1.5)
         
         return scroll
-    }()
-    
-    lazy var moneyLabel: UILabel = {
-        let label = UILabel(frame: .zero)
-        label.text = "1,321.74"
-        label.textColor = UIColor.white
-        label.font = UIFont(name: "Helvetica Bold", size: 55)
-        label.textAlignment = .left
-        return label
     }()
     
     lazy var creditCard:UIImageView = {
@@ -109,4 +117,6 @@ class landingView: UIViewController, UIScrollViewDelegate {
         
         return recent
     }()
+    
+    
 }
