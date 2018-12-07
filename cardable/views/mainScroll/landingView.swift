@@ -20,9 +20,12 @@ class landingView: UIViewController, UIScrollViewDelegate {
         setupAutoLayout()
     }
     
+    // ----------------------- FUNCTIONS -----------------------
+    
     func setupLandingView() {
         //self.view.addSubview(titleLabel)
         self.view.addSubview(scrollView)
+        self.view.addSubview(leftBtn)
         scrollView.addSubview(creditCard)
         scrollView.addSubview(recentTransactions)
         scrollView.addSubview(moneyLabel)
@@ -54,6 +57,10 @@ class landingView: UIViewController, UIScrollViewDelegate {
         
     }
     
+    @objc func goLeft() {
+        print("go left")
+    }
+    
     
     // ----------------------- LABELS -----------------------
     lazy var moneyLabel: UILabel = {
@@ -67,7 +74,16 @@ class landingView: UIViewController, UIScrollViewDelegate {
     
     
     // ----------------------- BUTTONS -----------------------
-    
+    lazy var leftBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: self.view.frame.width / 15, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        button.setTitle("debit", for: .normal)
+        button.layer.cornerRadius = self.view.frame.width / 10
+        button.layer.masksToBounds = true
+        //button.backgroundColor = Preferences.moneyGreen
+        button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
+        button.addTarget(self, action: #selector(goLeft), for: .touchDown)
+        return button
+    }()
     
     
     // ----------------------- VIEWS -----------------------
@@ -117,6 +133,5 @@ class landingView: UIViewController, UIScrollViewDelegate {
         
         return recent
     }()
-    
     
 }
