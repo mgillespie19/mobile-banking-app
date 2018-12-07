@@ -24,18 +24,32 @@ class landingView: UIViewController, UIScrollViewDelegate {
         //self.view.addSubview(titleLabel)
         self.view.addSubview(scrollView)
         scrollView.addSubview(creditCard)
+        scrollView.addSubview(recentTransactions)
+        scrollView.addSubview(moneyLabel)
+        scrollView.bringSubviewToFront(moneyLabel)
     }
     
     func setupAutoLayout() {
-        let verticalPadding = 25
+        let verticalPadding = 50
+        let cardWidth = self.view.frame.width * 0.85
         
         recentTransactions.translatesAutoresizingMaskIntoConstraints = false
-        
+        creditCard.translatesAutoresizingMaskIntoConstraints = false
+        moneyLabel.translatesAutoresizingMaskIntoConstraints = false
+
         NSLayoutConstraint.activate([
-//            recentTransactions.topAnchor.constraint(equalTo: creditCard.bottomAnchor, constant: CGFloat(verticalPadding)),
-//            recentTransactions.heightAnchor.constraint(equalToConstant: self.view.frame.width * 0.9),
-//            recentTransactions.widthAnchor.constraint(equalToConstant: self.view.frame.height),
-//            recentTransactions.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+            creditCard.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            creditCard.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: self.view.frame.height * 0.2),
+            creditCard.widthAnchor.constraint(equalToConstant: cardWidth),
+            creditCard.heightAnchor.constraint(equalToConstant: cardWidth * 0.66),
+            
+            recentTransactions.topAnchor.constraint(equalTo: creditCard.bottomAnchor, constant: CGFloat(verticalPadding * 2)),
+            recentTransactions.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            recentTransactions.heightAnchor.constraint(equalToConstant: self.scrollView.contentSize.height / 2),
+            recentTransactions.widthAnchor.constraint(equalToConstant: cardWidth * 1.1),
+            
+            moneyLabel.topAnchor.constraint(equalTo: creditCard.topAnchor, constant: 40),
+            moneyLabel.leftAnchor.constraint(equalTo: creditCard.leftAnchor, constant: self.view.frame.width / 4)
             ])
         
     }
@@ -52,19 +66,18 @@ class landingView: UIViewController, UIScrollViewDelegate {
         return scroll
     }()
     
-    lazy var titleLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: self.view.frame.width/4, y: self.view.frame.height/4, width: 200, height: 200))
-        label.text = "landing page"
+    lazy var moneyLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.text = "1,321.74"
         label.textColor = UIColor.white
-        label.font = label.font.withSize(30)
+        label.font = label.font.withSize(60)
         label.textAlignment = .left
         return label
     }()
     
     lazy var creditCard:UIImageView = {
         let img = UIImage(named: "landingCard")
-        let w = self.view.frame.width * 0.85
-        let creditCard = UIImageView(frame: CGRect(x: self.view.frame.width * 0.075, y: self.view.frame.height * 0.2, width: w, height: w * 0.66 ))
+        let creditCard = UIImageView(frame: .zero)
         
         //creditCard.transform = CGAffineTransform(rotationAngle: -1 * .pi / 25)
         creditCard.image = img
@@ -79,8 +92,20 @@ class landingView: UIViewController, UIScrollViewDelegate {
     
     lazy var recentTransactions:UIView = {
         let recent = UIView(frame: .zero)
+        let title = UILabel(frame: CGRect(x: self.view.frame.width / 8, y: 15, width: self.view.frame.width, height: 40))
         
+        title.text = "recent transactions"
+        title.textColor = UIColor.black
+        title.font = title.font.withSize(24)
+        title.textAlignment = .left
         
+        recent.backgroundColor = UIColor(displayP3Red: 0.95, green: 0.95, blue: 0.95, alpha: 0.9)
+        recent.cornerRadius = 5
+        recent.layer.shadowColor = UIColor.black.cgColor
+        recent.layer.shadowOpacity = 0.6
+        recent.layer.shadowOffset = CGSize.zero
+        recent.layer.shadowRadius = 20
+        recent.addSubview(title)
         
         return recent
     }()
