@@ -39,7 +39,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
 
         NSLayoutConstraint.activate([
             creditCard.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            creditCard.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: self.view.frame.height * 0.2),
+            creditCard.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: self.view.frame.height * 0.25),
             creditCard.widthAnchor.constraint(equalToConstant: cardWidth),
             creditCard.heightAnchor.constraint(equalToConstant: cardWidth * 0.66),
             
@@ -48,8 +48,8 @@ class landingView: UIViewController, UIScrollViewDelegate {
             recentTransactions.heightAnchor.constraint(equalToConstant: self.scrollView.contentSize.height / 2),
             recentTransactions.widthAnchor.constraint(equalToConstant: cardWidth * 1.1),
             
-            moneyLabel.topAnchor.constraint(equalTo: creditCard.topAnchor, constant: 60),
-            moneyLabel.leftAnchor.constraint(equalTo: creditCard.leftAnchor, constant: self.view.frame.width / 4)
+            moneyLabel.bottomAnchor.constraint(equalTo: creditCard.topAnchor, constant: -15),
+            moneyLabel.leftAnchor.constraint(equalTo: creditCard.leftAnchor, constant: self.view.frame.width / 20)
             ])
         
     }
