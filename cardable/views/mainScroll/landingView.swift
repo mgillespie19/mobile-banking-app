@@ -48,7 +48,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
             recentTransactions.heightAnchor.constraint(equalToConstant: self.scrollView.contentSize.height / 2),
             recentTransactions.widthAnchor.constraint(equalToConstant: cardWidth * 1.1),
             
-            moneyLabel.topAnchor.constraint(equalTo: creditCard.topAnchor, constant: 40),
+            moneyLabel.topAnchor.constraint(equalTo: creditCard.topAnchor, constant: 60),
             moneyLabel.leftAnchor.constraint(equalTo: creditCard.leftAnchor, constant: self.view.frame.width / 4)
             ])
         
@@ -70,7 +70,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
         let label = UILabel(frame: .zero)
         label.text = "1,321.74"
         label.textColor = UIColor.white
-        label.font = label.font.withSize(60)
+        label.font = UIFont(name: "Helvetica Bold", size: 55)
         label.textAlignment = .left
         return label
     }()
@@ -92,14 +92,14 @@ class landingView: UIViewController, UIScrollViewDelegate {
     
     lazy var recentTransactions:UIView = {
         let recent = UIView(frame: .zero)
-        let title = UILabel(frame: CGRect(x: self.view.frame.width / 8, y: 15, width: self.view.frame.width, height: 40))
+        let title = UILabel(frame: CGRect(x: self.view.frame.width / 16, y: 15, width: self.view.frame.width, height: 40))
         
         title.text = "recent transactions"
         title.textColor = UIColor.black
-        title.font = title.font.withSize(24)
+        title.font = UIFont(name: "Helvetica Bold", size: 30)
         title.textAlignment = .left
         
-        recent.backgroundColor = UIColor(displayP3Red: 0.95, green: 0.95, blue: 0.95, alpha: 0.9)
+        recent.backgroundColor = UIColor(displayP3Red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
         recent.cornerRadius = 5
         recent.layer.shadowColor = UIColor.black.cgColor
         recent.layer.shadowOpacity = 0.6

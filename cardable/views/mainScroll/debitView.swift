@@ -13,7 +13,23 @@ class debitView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupDebitView()
+        setupAutoLayout()
+    }
+    
+    func setupDebitView() {
 
     }
+    
+    func setupAutoLayout() {
+        let verticalPadding = 50
+        let cardWidth = self.view.frame.width * 0.85
+        
+        
+        
+    }
+    
+    
+    
 
 }
