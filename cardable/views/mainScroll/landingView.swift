@@ -26,10 +26,13 @@ class landingView: UIViewController, UIScrollViewDelegate {
         //self.view.addSubview(titleLabel)
         self.view.addSubview(scrollView)
         self.view.addSubview(leftBtn)
+        
         scrollView.addSubview(creditCard)
         scrollView.addSubview(recentTransactions)
         scrollView.addSubview(moneyLabel)
         scrollView.bringSubviewToFront(moneyLabel)
+        scrollView.addSubview(plusBtn)
+        scrollView.addSubview(cameraBtn)
     }
     
     func setupAutoLayout() {
@@ -61,6 +64,14 @@ class landingView: UIViewController, UIScrollViewDelegate {
         print("go left")
     }
     
+    @objc func plus() {
+        print("elaborate")
+    }
+    
+    @objc func openCamera() {
+        print("open camera")
+    }
+    
     
     // ----------------------- LABELS -----------------------
     lazy var moneyLabel: UILabel = {
@@ -79,9 +90,36 @@ class landingView: UIViewController, UIScrollViewDelegate {
         button.setTitle("debit", for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 10
         button.layer.masksToBounds = true
+        button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 20)
         //button.backgroundColor = Preferences.moneyGreen
         button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
         button.addTarget(self, action: #selector(goLeft), for: .touchDown)
+        return button
+    }()
+    
+    lazy var plusBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: self.view.frame.width - self.view.frame.width / 5 - self.view.frame.width / 15, y: self.view.frame.height / 25, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        button.setTitle("+", for: .normal)
+        button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 30)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.layer.cornerRadius = self.view.frame.width / 10
+        button.layer.masksToBounds = true
+        //button.backgroundColor = Preferences.moneyGreen
+        button.backgroundColor = UIColor(displayP3Red: 200/255, green: 200/255, blue: 200/255, alpha: 0.7)
+        button.addTarget(self, action: #selector(plus), for: .touchDown)
+        return button
+    }()
+    
+    lazy var cameraBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: self.view.frame.width / 15, y: self.view.frame.height / 25, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        button.setTitle("+", for: .normal)
+        button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 30)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.layer.cornerRadius = self.view.frame.width / 10
+        button.layer.masksToBounds = true
+        //button.backgroundColor = Preferences.moneyGreen
+        button.backgroundColor = UIColor(displayP3Red: 200/255, green: 200/255, blue: 200/255, alpha: 0.7)
+        button.addTarget(self, action: #selector(openCamera), for: .touchDown)
         return button
     }()
     
@@ -100,7 +138,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
     }()
     
     lazy var creditCard:UIImageView = {
-        let img = UIImage(named: "landingCard")
+        let img = UIImage(named: "landingCardAlt")
         let creditCard = UIImageView(frame: .zero)
         
         //creditCard.transform = CGAffineTransform(rotationAngle: -1 * .pi / 25)
