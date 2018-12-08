@@ -1,9 +1,5 @@
 //
 //  StartController.swift
-//  myEhrBeta
-//
-//  Created by Brad Hodkinson on 11/24/18.
-//  Copyright © 2018 Brad Hodkinson. All rights reserved.
 //
 
 import UIKit
