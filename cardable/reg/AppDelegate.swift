@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let loggedIn = true
+        let loggedIn = false
         var mainViewController: UIViewController
         
         if(loggedIn){
