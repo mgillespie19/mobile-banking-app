@@ -26,6 +26,9 @@ class landingView: UIViewController, UIScrollViewDelegate {
         //self.view.addSubview(titleLabel)
         self.view.addSubview(scrollView)
         self.view.addSubview(leftBtn)
+        self.view.addSubview(midBtn)
+        self.view.addSubview(rightBtn)
+        
         
         scrollView.addSubview(creditCard)
         scrollView.addSubview(recentTransactions)
@@ -64,6 +67,14 @@ class landingView: UIViewController, UIScrollViewDelegate {
         print("go left")
     }
     
+    @objc func goMid() {
+        print("go middle")
+    }
+    
+    @objc func goRight() {
+        print("go right")
+    }
+    
     @objc func plus() {
         print("elaborate")
     }
@@ -86,7 +97,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
     
     // ----------------------- BUTTONS -----------------------
     lazy var leftBtn: UIButton = {
-        let button = UIButton(frame: CGRect(x: self.view.frame.width / 15, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        let button = UIButton(frame: CGRect(x: self.view.frame.width / 7 , y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
         button.setTitle("debit", for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 10
         button.layer.masksToBounds = true
@@ -94,6 +105,30 @@ class landingView: UIViewController, UIScrollViewDelegate {
         //button.backgroundColor = Preferences.moneyGreen
         button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
         button.addTarget(self, action: #selector(goLeft), for: .touchDown)
+        return button
+    }()
+    
+    lazy var midBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: self.view.frame.width / 7 * 3, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        button.setTitle("landing", for: .normal)
+        button.layer.cornerRadius = self.view.frame.width / 10
+        button.layer.masksToBounds = true
+        button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 20)
+        //button.backgroundColor = Preferences.moneyGreen
+        button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
+        button.addTarget(self, action: #selector(goMid), for: .touchDown)
+        return button
+    }()
+    
+    lazy var rightBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: self.view.frame.width / 7 * 5, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        button.setTitle("credit", for: .normal)
+        button.layer.cornerRadius = self.view.frame.width / 10
+        button.layer.masksToBounds = true
+        button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 20)
+        //button.backgroundColor = Preferences.moneyGreen
+        button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
+        button.addTarget(self, action: #selector(goRight), for: .touchDown)
         return button
     }()
     
