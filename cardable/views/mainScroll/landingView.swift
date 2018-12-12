@@ -54,12 +54,12 @@ class landingView: UIViewController, UIScrollViewDelegate {
             recentTransactions.heightAnchor.constraint(equalToConstant: self.scrollView.contentSize.height / 2),
             recentTransactions.widthAnchor.constraint(equalToConstant: cardWidth * 1.1),
             
-            moneyLabel.bottomAnchor.constraint(equalTo: creditCard.topAnchor, constant: -15),
+            moneyLabel.bottomAnchor.constraint(equalTo: creditCard.bottomAnchor, constant: -15),
             moneyLabel.leftAnchor.constraint(equalTo: creditCard.leftAnchor, constant: self.view.frame.width / 20)
             ])
         
     }
-    
+        
     @objc func goLeft() {
         print("go left")
     }
@@ -78,7 +78,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
         let label = UILabel(frame: .zero)
         label.text = "1,321.74"
         label.textColor = UIColor.white
-        label.font = UIFont(name: "Helvetica Bold", size: 55)
+        label.font = UIFont(name: "Courier New", size: 30)
         label.textAlignment = .left
         return label
     }()
@@ -138,7 +138,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
     }()
     
     lazy var creditCard:UIImageView = {
-        let img = UIImage(named: "landingCardAlt")
+        let img = UIImage(named: "landingCardNoDate")
         let creditCard = UIImageView(frame: .zero)
         
         //creditCard.transform = CGAffineTransform(rotationAngle: -1 * .pi / 25)
