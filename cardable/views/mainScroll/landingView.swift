@@ -86,7 +86,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
         let button = UIButton(frame: CGRect(x: self.view.frame.width - self.view.frame.width / 5 - self.view.frame.width / 15, y: self.view.frame.height / 25, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
         button.setTitle("+", for: .normal)
         button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 30)
-        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 10
         button.layer.masksToBounds = true
         //button.backgroundColor = Preferences.moneyGreen
@@ -99,7 +99,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
         let button = UIButton(frame: CGRect(x: self.view.frame.width / 15, y: self.view.frame.height / 25, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
         button.setTitle("+", for: .normal)
         button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 30)
-        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 10
         button.layer.masksToBounds = true
         //button.backgroundColor = Preferences.moneyGreen

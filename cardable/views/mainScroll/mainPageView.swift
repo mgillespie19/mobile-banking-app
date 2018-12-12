@@ -74,6 +74,13 @@ class PageViewController: UIPageViewController
         //button.backgroundColor = Preferences.moneyGreen
         button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
         button.addTarget(self, action: #selector(goLeft), for: .touchDown)
+        
+        //let leftBtn = UIImageView(frame: .zero)
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 2
+        button.layer.shadowOffset = CGSize.zero
+        button.layer.shadowRadius = 20
+        
         return button
     }()
     
