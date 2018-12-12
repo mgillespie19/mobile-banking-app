@@ -69,7 +69,6 @@ class PageViewController: UIPageViewController
         let button = UIButton(frame: CGRect(x: self.view.frame.width / 15 , y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
         button.setTitle("debit", for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 10
-        button.layer.masksToBounds = true
         button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 20)
         //button.backgroundColor = Preferences.moneyGreen
         button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
@@ -77,9 +76,10 @@ class PageViewController: UIPageViewController
         
         //let leftBtn = UIImageView(frame: .zero)
         button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOpacity = 2
+        button.layer.shadowOpacity = 0.7
         button.layer.shadowOffset = CGSize.zero
-        button.layer.shadowRadius = 20
+        button.layer.shadowRadius = 5
+        button.layer.masksToBounds = false
         
         return button
     }()
@@ -88,11 +88,18 @@ class PageViewController: UIPageViewController
         let button = UIButton(frame: CGRect(x: self.view.frame.width / 2 - self.view.frame.width / 8, y: self.view.frame.height * 7 / 8 - self.view.frame.width / 12, width: self.view.frame.width / 4, height: self.view.frame.width / 4))
         button.setTitle("landing", for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 8
-        button.layer.masksToBounds = true
+
         button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 20)
         //button.backgroundColor = Preferences.moneyGreen
         button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
         button.addTarget(self, action: #selector(goMid), for: .touchDown)
+        
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.7
+        button.layer.shadowOffset = CGSize.zero
+        button.layer.shadowRadius = 5
+        button.layer.masksToBounds = false
+        
         return button
     }()
     
@@ -100,11 +107,18 @@ class PageViewController: UIPageViewController
         let button = UIButton(frame: CGRect(x: self.view.frame.width * 14 / 15 - self.view.frame.width / 5, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
         button.setTitle("credit", for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 10
-        button.layer.masksToBounds = true
+
         button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 20)
         //button.backgroundColor = Preferences.moneyGreen
         button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
         button.addTarget(self, action: #selector(goRight), for: .touchDown)
+        
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.7
+        button.layer.shadowOffset = CGSize.zero
+        button.layer.shadowRadius = 5
+        button.layer.masksToBounds = false
+        
         return button
     }()
 }
