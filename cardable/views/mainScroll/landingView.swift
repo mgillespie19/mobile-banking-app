@@ -97,7 +97,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
     
     // ----------------------- BUTTONS -----------------------
     lazy var leftBtn: UIButton = {
-        let button = UIButton(frame: CGRect(x: self.view.frame.width / 7 , y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        let button = UIButton(frame: CGRect(x: self.view.frame.width / 15 , y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
         button.setTitle("debit", for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 10
         button.layer.masksToBounds = true
@@ -109,7 +109,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
     }()
     
     lazy var midBtn: UIButton = {
-        let button = UIButton(frame: CGRect(x: self.view.frame.width / 7 * 3, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        let button = UIButton(frame: CGRect(x: self.view.frame.width / 2 - self.view.frame.width / 10, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
         button.setTitle("landing", for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 10
         button.layer.masksToBounds = true
@@ -121,7 +121,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
     }()
     
     lazy var rightBtn: UIButton = {
-        let button = UIButton(frame: CGRect(x: self.view.frame.width / 7 * 5, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        let button = UIButton(frame: CGRect(x: self.view.frame.width * 14 / 15 - self.view.frame.width / 5, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
         button.setTitle("credit", for: .normal)
         button.layer.cornerRadius = self.view.frame.width / 10
         button.layer.masksToBounds = true
