@@ -32,13 +32,17 @@ class PageViewController: UIPageViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-                
+        
         setupPageView()
     }
     
     func setupPageView () {
         self.dataSource = self
         self.delegate   = self
+        
+        self.view.addSubview(leftBtn)
+        self.view.addSubview(midBtn)
+        self.view.addSubview(rightBtn)
         
         if let firstVC = pages.first
         {
@@ -47,7 +51,55 @@ class PageViewController: UIPageViewController
         
         createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.moneyGreen.cgColor], rotation: Preferences.gradientPref, locations: [0.32, 1.3])
     }
+    
+    @objc func goLeft() {
+        print("go left")
+    }
+    
+    @objc func goMid() {
+        print("go middle")
+    }
+    
+    @objc func goRight() {
+        print("go right")
+    }
 
+    // BUTTONS
+    lazy var leftBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: self.view.frame.width / 15 , y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        button.setTitle("debit", for: .normal)
+        button.layer.cornerRadius = self.view.frame.width / 10
+        button.layer.masksToBounds = true
+        button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 20)
+        //button.backgroundColor = Preferences.moneyGreen
+        button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
+        button.addTarget(self, action: #selector(goLeft), for: .touchDown)
+        return button
+    }()
+    
+    lazy var midBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: self.view.frame.width / 2 - self.view.frame.width / 8, y: self.view.frame.height * 7 / 8 - self.view.frame.width / 12, width: self.view.frame.width / 4, height: self.view.frame.width / 4))
+        button.setTitle("landing", for: .normal)
+        button.layer.cornerRadius = self.view.frame.width / 8
+        button.layer.masksToBounds = true
+        button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 20)
+        //button.backgroundColor = Preferences.moneyGreen
+        button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
+        button.addTarget(self, action: #selector(goMid), for: .touchDown)
+        return button
+    }()
+    
+    lazy var rightBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: self.view.frame.width * 14 / 15 - self.view.frame.width / 5, y: self.view.frame.height * 7 / 8, width: self.view.frame.width / 5, height: self.view.frame.width / 5))
+        button.setTitle("credit", for: .normal)
+        button.layer.cornerRadius = self.view.frame.width / 10
+        button.layer.masksToBounds = true
+        button.titleLabel?.font = UIFont(name: "Helvetica Bold", size: 20)
+        //button.backgroundColor = Preferences.moneyGreen
+        button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
+        button.addTarget(self, action: #selector(goRight), for: .touchDown)
+        return button
+    }()
 }
 
 // PAGE VIEW DATA SOURCE

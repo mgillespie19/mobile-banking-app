@@ -24,9 +24,6 @@ class debitView: UIViewController {
     func setupAutoLayout() {
         let verticalPadding = 50
         let cardWidth = self.view.frame.width * 0.85
-        
-        
-        
     }
     
     
