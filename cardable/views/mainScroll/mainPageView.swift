@@ -94,6 +94,9 @@ class PageViewController: UIPageViewController
         button.backgroundColor = UIColor(displayP3Red: 50/255, green: 160/255, blue: 57/255, alpha: 1)
         button.addTarget(self, action: #selector(goMid), for: .touchDown)
         
+        //view.setGradientBackground(colorOne: Preferences.moneyGreen, colorTwo: UIColor.grey)
+        //button.setGradientBackground(colorOne: Preferences.moneyGreen, colorTwo: UIColor.white)
+        
         button.layer.shadowColor = UIColor.black.cgColor
         button.layer.shadowOpacity = 0.7
         button.layer.shadowOffset = CGSize.zero

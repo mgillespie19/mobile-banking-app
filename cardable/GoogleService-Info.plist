@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>537651249277-3ilp0bcbeqtrno4252j1shi10nsaujcp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.537651249277-3ilp0bcbeqtrno4252j1shi10nsaujcp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB_3n3x7j6tvpnM3If66ihhKAFVFMiKMdk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>537651249277</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Max-Gillespie.cardable</string>
+	<key>PROJECT_ID</key>
+	<string>cardable-rev1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cardable-rev1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:537651249277:ios:a08bccebef2b077c</string>
+	<key>DATABASE_URL</key>
+	<string>https://cardable-rev1.firebaseio.com</string>
+</dict>
+</plist>

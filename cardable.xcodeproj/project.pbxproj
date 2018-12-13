@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E5FFFF0EACE13B9DF6C141B /* Pods_cardable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E663AC28F58314B1BBA0DA9 /* Pods_cardable.framework */; };
+		BA29CBBA21C201FB005401FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA29CBB921C201FA005401FD /* GoogleService-Info.plist */; };
 		F6105A5B219F5B6700E70E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A5A219F5B6700E70E68 /* AppDelegate.swift */; };
 		F6105A5D219F5B6700E70E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6105A5C219F5B6700E70E68 /* ViewController.swift */; };
 		F6105A60219F5B6700E70E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6105A5E219F5B6700E70E68 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		07477B24F4986FC3AFE4828B /* Pods-cardable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cardable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cardable/Pods-cardable.debug.xcconfig"; sourceTree = "<group>"; };
 		1E663AC28F58314B1BBA0DA9 /* Pods_cardable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cardable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E1CE28A2BB537D0EE9B379 /* Pods-cardable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cardable.release.xcconfig"; path = "Pods/Target Support Files/Pods-cardable/Pods-cardable.release.xcconfig"; sourceTree = "<group>"; };
+		BA29CBB921C201FA005401FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6105A57219F5B6700E70E68 /* cardable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6105A5A219F5B6700E70E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6105A5C219F5B6700E70E68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F6105A69219F5B6800E70E68 /* Info.plist */,
+				BA29CBB921C201FA005401FD /* GoogleService-Info.plist */,
 				F6105A64219F5B6800E70E68 /* Assets.xcassets */,
 				F6105A5E219F5B6700E70E68 /* Main.storyboard */,
 				F626A9A9219F8973007B28F1 /* reg */,
@@ -267,6 +270,7 @@
 				F6105A53219F5B6700E70E68 /* Sources */,
 				F6105A54219F5B6700E70E68 /* Frameworks */,
 				F6105A55219F5B6700E70E68 /* Resources */,
+				674CA3D44498ADDAFEE159E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -362,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6105A68219F5B6800E70E68 /* LaunchScreen.storyboard in Resources */,
+				BA29CBBA21C201FB005401FD /* GoogleService-Info.plist in Resources */,
 				F6105A65219F5B6800E70E68 /* Assets.xcassets in Resources */,
 				F6105A60219F5B6700E70E68 /* Main.storyboard in Resources */,
 			);
@@ -384,6 +389,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		674CA3D44498ADDAFEE159E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cardable/Pods-cardable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cardable/Pods-cardable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9F5B25EA6774699F41A656EF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

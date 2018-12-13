@@ -20,6 +20,18 @@ func createGradientLayer(v: UIView, colors:[CGColor], rotation:[CGPoint], locati
     v.layer.insertSublayer(gradientLayer, at: 0)
 }
 
+extension UIView{
+    func setGradientBackground(colorOne: UIColor, colorTwo: UIColor){
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = bounds
+        gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
+        gradientLayer.locations = [0.0,1.0]
+        gradientLayer.startPoint = CGPoint(x:1.0, y: 1.0)
+        gradientLayer.endPoint = CGPoint( x : 0.0, y: 0.0)
+        layer.insertSublayer(gradientLayer, at: 0)
+    }
+}
+
 func createGradientBlockLayer(v: UIView, top:CGColor, bottom:CGColor) ->UIColor{
     let view = Divider(frame: v.bounds)
     let midColor = view.fill(top:top, bottom:bottom)

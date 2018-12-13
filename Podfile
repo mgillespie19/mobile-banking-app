@@ -6,5 +6,6 @@ target 'cardable' do
   use_frameworks!
 
   # Pods for cardable
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 end
