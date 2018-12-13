@@ -49,7 +49,8 @@ class PageViewController: UIPageViewController
             setViewControllers([firstVC], direction: .reverse, animated: true, completion: nil)
         }
         
-        createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.moneyGreen.cgColor], rotation: Preferences.gradientPref, locations: [0.32, 1.3])
+        //createGradientLayer(v: self.view, colors: [Preferences.accentColor.cgColor, Preferences.moneyGreen.cgColor], rotation: Preferences.gradientPref, locations: [0.32, 1.3])
+        createGradientLayer(v: self.view, colors: [Preferences.secondaryColor.cgColor, Preferences.moneyGreen.cgColor], rotation: Preferences.gradientPref, locations: [0.32, 1.3])
     }
     
     @objc func goLeft() {

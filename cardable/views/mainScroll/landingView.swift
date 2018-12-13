@@ -27,7 +27,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
         self.view.addSubview(scrollView)
         
         scrollView.addSubview(creditCard)
-        scrollView.addSubview(recentTransactions)
+        //scrollView.addSubview(recentTransactions)
         scrollView.addSubview(moneyLabel)
         scrollView.bringSubviewToFront(moneyLabel)
         scrollView.addSubview(plusBtn)
@@ -38,7 +38,7 @@ class landingView: UIViewController, UIScrollViewDelegate {
         let verticalPadding = 50
         let cardWidth = self.view.frame.width * 0.85
         
-        recentTransactions.translatesAutoresizingMaskIntoConstraints = false
+        //recentTransactions.translatesAutoresizingMaskIntoConstraints = false
         creditCard.translatesAutoresizingMaskIntoConstraints = false
         moneyLabel.translatesAutoresizingMaskIntoConstraints = false
 
@@ -48,10 +48,10 @@ class landingView: UIViewController, UIScrollViewDelegate {
             creditCard.widthAnchor.constraint(equalToConstant: cardWidth),
             creditCard.heightAnchor.constraint(equalToConstant: cardWidth * 0.66),
             
-            recentTransactions.topAnchor.constraint(equalTo: creditCard.bottomAnchor, constant: CGFloat(verticalPadding * 2)),
-            recentTransactions.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            recentTransactions.heightAnchor.constraint(equalToConstant: self.scrollView.contentSize.height / 2),
-            recentTransactions.widthAnchor.constraint(equalToConstant: cardWidth * 1.1),
+//            recentTransactions.topAnchor.constraint(equalTo: creditCard.bottomAnchor, constant: CGFloat(verticalPadding * 2)),
+//            recentTransactions.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+//            recentTransactions.heightAnchor.constraint(equalToConstant: self.scrollView.contentSize.height / 2),
+//            recentTransactions.widthAnchor.constraint(equalToConstant: cardWidth * 1.1),
             
             moneyLabel.bottomAnchor.constraint(equalTo: creditCard.bottomAnchor, constant: -15),
             moneyLabel.leftAnchor.constraint(equalTo: creditCard.leftAnchor, constant: self.view.frame.width / 20)
